@@ -16,7 +16,6 @@ ftypes = [
 	("All files", "*.*")
 ]
 
-
 def check_boundaries(value, tolerance:int, sat_and_brightness=False, upper=False) -> int:
 	"""
 	Checks if the value is within the boundaries of the range.
@@ -113,8 +112,6 @@ def pick_color(event, x, y, flags, param) -> None:
 		image_mask = cv2.inRange(image_hsv, lower, upper)
 		cv2.imshow("Mask", image_mask)
 
-
-
 def main():
 	global image_hsv, pixel
 	
@@ -145,6 +142,7 @@ def main():
 	
 	cv2.waitKey(0)
 	cv2.destroyAllWindows()
+
 
 if __name__== '__main__':
 	main()

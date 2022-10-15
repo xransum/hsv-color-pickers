@@ -13,11 +13,8 @@ ftypes = [
 ]
 
 # default values
-#lower_hsv = np.array([0, 0, 0])
-#upper_hsv = np.array([179, 255, 255])
-lower_hsv = np.array([179, 0, 216])
-upper_hsv = np.array([180, 0, 136])
-
+lower_hsv = np.array([0, 0, 0])
+upper_hsv = np.array([179, 255, 255])
 
 # Trackbar callback function
 def nothing(x):
