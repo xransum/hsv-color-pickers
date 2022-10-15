@@ -97,8 +97,8 @@ def pick_color(event, x, y, flags, param) -> None:
 		# set upper_or_lower = 1 for upper and upper_or_lower = 0 for lower
 		hue_upper = check_boundaries(pixel[0], tolerance=10, sat_and_brightness=False, upper=True)
 		hue_lower = check_boundaries(pixel[0], tolerance=10, sat_and_brightness=False, upper=False)
-		saturation_upper = check_boundaries(pixel[1], tolerance=25, sat_and_brightness=True, upper=True)
-		saturation_lower = check_boundaries(pixel[1], tolerance=25, sat_and_brightness=True, upper=False)
+		saturation_upper = check_boundaries(pixel[1], tolerance=10, sat_and_brightness=True, upper=True)
+		saturation_lower = check_boundaries(pixel[1], tolerance=10, sat_and_brightness=True, upper=False)
 		value_upper = check_boundaries(pixel[2], tolerance=40, sat_and_brightness=True, upper=True)
 		value_lower = check_boundaries(pixel[2], tolerance=40, sat_and_brightness=True, upper=False)
 		
